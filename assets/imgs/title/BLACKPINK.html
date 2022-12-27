@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKPINK</title>
+    
+    
+    
+
+<link rel="icon" href="./BLACKPINK_files/logo-blackpink.svg"><link rel="stylesheet" href="http://127.0.0.1:5500/assets/css/style.css?_cacheOverride=1672111328441"><link rel="stylesheet" href="http://127.0.0.1:5500/assets/fonts/themify-icons/themify-icons.css?_cacheOverride=1672111328442"></head>
+
+<body cz-shortcut-listen="true">
+    <div id="main">
+        <div id="header">
+            <!-- Begin Logo -->
+            <div class="header-logo">
+                <a href="http://127.0.0.1:5500/index.html">
+                    <img src="./BLACKPINK_files/logo-blackpink.svg" alt="BLACKPINK" class="logo">
+                </a>
+            </div>
+            <!-- End Logo -->
+
+            <!-- Begin header-nav -->
+            <div class="header-nav">
+                <ul id="nav">
+                    <li><a href="http://127.0.0.1:5500/index.html">Main</a></li>
+                    <li><a href="http://127.0.0.1:5500/index.html">About</a></li>
+                    <li><a href="http://127.0.0.1:5500/index.html">Album</a></li>
+                    <li><a href="http://127.0.0.1:5500/index.html">MV</a></li>
+                    <li><a href="http://127.0.0.1:5500/index.html">Schedule</a></li>
+                    <li><a href="http://127.0.0.1:5500/index.html">Contact</a></li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/index.html#">Private stage</a>
+                        <ul class="subnav">
+                            <li><a href="http://127.0.0.1:5500/index.html">Merchandise</a></li>
+                            <li><a href="http://127.0.0.1:5500/index.html">Extras</a></li>
+                            <li><a href="http://127.0.0.1:5500/index.html">Media</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- End header-nav -->
+        </div>
+        <!-- Slider -->
+        <div id="slider">
+            <video id="slider-video" autoplay="" loop="" muted="">
+                <source type="video/mp4" src="./assets/videos/BP.mp4">
+            </video>
+        </div>
+
+        <div id="content">
+            <!-- About section -->
+            <div id="band" class="content-section">
+                <h2 class="section-heading">BLACKPINK</h2>
+                <p class="section-sub-heading">Black Pink in your area</p>
+                <p class="about-text">
+                    "세계 최정상 걸그룹 BLACKPINK가 두 번째 정규 앨범 [BORN PINK]를 발표했다.
+                    지난 8월 선공개곡 ‘Pink Venom’으로 전세계 리스너들을 중독시킨 BLACKPINK가
+                    두 번째 정규앨범 [BORN PINK]로 또 한 번 전세계를 매혹시킬 전망이다.
+                    [BORN PINK]는 태생부터 남다른 존재감을 지닌 BLACKPINK의 자신감을 드러내는 앨범명으로,
+                    타이틀곡 ‘Shut Down’을 비롯한 BLACKPINK만의 강렬한 사운드를 담은 독보적인 트랙 8곡이 수록됐다.
+                    선공개곡부터 정규앨범과 월드투어까지. 대규모 프로젝트를 통해 블랙핑크가 어떠한 신기록을 써내려갈지 주목된다."
+                </p>
+                <!-- <div class="row members-list">
+                    <div class="col col-four text-center">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/imgs/member/jennie.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="col col-four text-center">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/imgs/member/rose.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="col col-four text-center">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/imgs/member/lisa.jpg" alt="Name" class="member-img">
+                    </div>
+
+                    <div class="col col-four text-center">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/imgs/member/jisoo.jpg" alt="Name" class="member-img">
+                    </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+
+    </div>
+    
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
