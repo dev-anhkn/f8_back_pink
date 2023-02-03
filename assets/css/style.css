@@ -28,6 +28,12 @@ html {
     margin-left: -8px;
 }
 
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .col {
     float: left;
     padding-left: 8px;
@@ -98,7 +104,7 @@ li>a {
     color: #F4A7BC;
     font-weight: bold;
     padding: 0 12px;
-    width: 130px;
+    width: 100%;
     padding: 0 12px;
     line-height: 38.5px;
 }
@@ -142,9 +148,9 @@ li>a {
 
 #content .content-section {
     width: 1000px;
+    padding: 64px 0px 100px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
 }
 
 #content .section-heading {
@@ -152,12 +158,13 @@ li>a {
     letter-spacing: 4px;
     font-weight: 500;
     font-size: 30px;
+    text-align: center;
 }
 
 #content .section-sub-heading {
     font-size: 15px;
     text-align: center;
-    margin-top: 25px;
+    margin: 25px 0;
     font-style: italic;
     opacity: 0.6;
 }
@@ -180,7 +187,105 @@ li>a {
 #content .member-img {
     margin-top: 15px;
     width: 200px;
+    border-radius: 2px;
+    border: 2.5px solid rgba(244, 167, 188, 0.4);
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+    border: 2.5px solid rgba(244, 167, 188, 0.4);
+}
+
+.place-body {
+    background-color: rgba(57, 11, 23, 0.4);
+    padding: 16px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size: 15px;
+}
+
+.place-time {
+    margin-top: 15px;
+    color: #fff;
+}
+
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.schedule--row {
+    padding: 20px;
+    background-color: rgba(57, 11, 23, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.schedule--row h5 {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0;
+}
+
+.schedule--date {
+    flex: 0.8;
+    text-align: left;
+    color: #F4A7BC;
+}
+
+.schedule--city {
+    flex: 0.6;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.schedule--location {
+    flex: 0.9;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.schedule--actions {
+    flex: 1;
+    text-align: right;
+}
+
+.button {
+    width: 130px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 14px;
+    margin: auto;
     border-radius: 5px;
+    line-height: 25px;
+    padding: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+}
+
+.button--gray {
+    background-color: #4c4c4c;
+    color: #c8c8c8;
+}
+
+.button--ghost {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    transition: background-color .2s ease-in-out;
+}
+
+.button--pink {
+    background-color: #F4A7BC;
+    color: #000000;
+    transition: background-color .2s ease-in-out;
 }
 
 #footer {}
